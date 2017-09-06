@@ -8,7 +8,7 @@ By default, each user has his own configuration & machines in the VirtualBox
 environment. As of today, VirtualBox was configured to use a shared directory
 available to all users, which is at D:\VMs\.
 
-The instructions for multiple users access are adopted from
+The instructions for multiple users access are adapted from
 http://lifeofageekadmin.com/allow-multiple-users/:
 - VBOXUSERS group was created with 2 users (BNL\chubar and BNL\mrakitin);
 - VBOX_USER_HOME environment variable was set to "D:\VMs\.VirtualBox" (that's
@@ -90,4 +90,4 @@ $ sirepo service http
 
 
 -----------------------------------------------
-2017-09-05 by Maksim Rakitin <mrakitin@bnl.gov>
+2017-09-05 by Maksim Rakitin
