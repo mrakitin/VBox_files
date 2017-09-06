@@ -104,6 +104,26 @@ celery flower -A sirepo.celery_tasks
 sirepo service http
 ```
 
+- screen 5 (used for console operations):
+```bash
+cd ~/src/radiasoft/sirepo
+git pull --all  # pull the latest version of Sirepo
+```
+
+IV. Troubleshooting
+--
+If Sirepo fails to open any of the predefined examples (e.g., Undulator Radiation), it may mean the server is missing some of the simulaiton codes.
+
+To install the missing packages, execute the following commands:
+```bash
+cd ~/src/radiasoft/sirepo
+pip install -r requirements.txt
+```
+
+To install WARP, do the following:
+```bash
+curl radia.run | bash -s code warp rsbeams
+```
+
 ---
 2017-09-06 by Maksim Rakitin
-
