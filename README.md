@@ -71,7 +71,7 @@ Connect over ssh to `nsls2expdev1.bnl.gov:2222` with vagrant user and run:
 screen -R -D my
 ```
 
-![[img/sirepo_screen.png]]
+![](img/sirepo_screen.png)
 
 To switch between screens use <kbd>Ctrl></kbd>+<kbd>^</kbd> then <kbd>Space</kbd> bar.
 
