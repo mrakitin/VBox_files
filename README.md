@@ -66,11 +66,11 @@ The structure of `D:\VMs\`:
 
 III. Sirepo services inside Sirepo VM:
 --
-ssh to `nsls2expdev1.bnl.gov:2222` with vagrant user
+Connect over ssh to `nsls2expdev1.bnl.gov:2222` with vagrant user and run:
 ```
 screen -R -D my
 ```
-to switch between screens use <kbd>Ctrl></kbd>+<kbd>^</kbd> then <kbd>Space</kbd> bar.
+To switch between screens use <kbd>Ctrl></kbd>+<kbd>^</kbd> then <kbd>Space</kbd> bar.
 
 - screen 0:
 ```bash
@@ -78,11 +78,12 @@ htop
 ```
 
 - screen 1:
+
 If there is an existing container, clean it by the command:
 ```bash
 bash ~/src/mrakitin/utils/bash/clean_docker.sh mgmt
 ```
-
+Then run:
 ```bash
 docker pull rabbitmq:management
 docker run --rm --hostname rabbit --name rabbit -p 5672:5672 -p 15672:15672 rabbitmq:management
@@ -104,5 +105,5 @@ sirepo service http
 ```
 
 ---
-2017-09-05 by Maksim Rakitin
+2017-09-06 by Maksim Rakitin
 
