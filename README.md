@@ -79,7 +79,7 @@ htop
 
 - screen 1:
 
-If there is an existing container, clean it by the command:
+If there is an existing container, clean it by the [command](https://github.com/mrakitin/utils/blob/master/bash/clean_docker.sh):
 ```bash
 bash ~/src/mrakitin/utils/bash/clean_docker.sh mgmt
 ```
